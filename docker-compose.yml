@@ -9,6 +9,9 @@ services:
       - "5000:5000"
     volumes:
       - downloads_volume:/back/downloads
+    environment:
+    - DKC_USER=${DKC_USER}
+    - DKC_PASSWORD=${DKC_PASSWORD}
 
 # environment:
 #   # для отладки (при запуске в релиз убрать!)
