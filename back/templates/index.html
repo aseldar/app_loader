@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Привет! Это моя Flask-страница.</h1>
+    <form action="{{ url_for('get_price') }}" method="post">
+        <input type="submit" value="Нажми на меня">
+    </form>
+</body>
+</html>
