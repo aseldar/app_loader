@@ -5,15 +5,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Привет! Это моя Flask-страница.</h1>
+    <h1>Привет! Здесь ты можешь скачать прайсы DKC и IEK</h1>
 
-    <form action="{{ url_for('get_price_dkc') }}" method="post">
-        <input type="submit" value="Скачать прайс DKC">
-    </form>
+    <div class="button-container"></div>
+        <form action="{{ url_for('get_price_dkc') }}" method="post">
+            <input type="submit" class="button" value="Скачать прайс DKC">
+        </form>
+    </div>
 
-    <form action="{{ url_for('get_price_iek') }}" method="post">
-        <input type="submit" value="Скачать прайс IEK">
-    </form>
+    <div class="button-container">
+        <form action="{{ url_for('get_price_iek') }}" method="post">
+            <input type="submit" class="button" value="Скачать прайс IEK">
+        </form>
+    </div>
 
 </body>
 </html>

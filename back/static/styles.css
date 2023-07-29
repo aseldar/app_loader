@@ -1,16 +1,20 @@
 body {
     text-align: center;
-    background-color: #f2f2f2;
+    background-color: #cfdbdf;
     font-family: Arial, sans-serif;
 }
 
 h1 {
-    color: #333;
+    color: #cf8d8d;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
+.button-container {
+    margin: 20px;
+}
+
+.button-container button {
+    background-color: #21ac26;
+    color: rgb(84, 32, 32);
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -19,8 +23,9 @@ button {
     font-size: 16px;
     margin: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #45a049;
+.button-container button:hover {
+    background-color: #3d279c;
 }
